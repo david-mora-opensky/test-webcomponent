@@ -1,0 +1,122 @@
+/*
+Curso de jQuery a JS
+
+Aprender a manejar JS puro, entender la libreria pero poder aplicarla sin depender de ella.
+
+Sin necesidad de Vanilla JS
+
+Con AJAX  -> SERVER EXTERNOº
+
+
+
+Conceptos
+
+
+
+var -> ya no se usa
+const -> noCambia = "David_Mora"
+let -> Cambia con el tiempo  = "@david o .David"
+
+    ¿Que son las funciones?
+    Son piezas de codigo que podemos reutilizar y se declaran:
+        function cambiarNombre(nuevoNombre) {
+            cambia = nuevoNombre
+        }
+
+        1. Primer concepto que hay que tener claro
+PROMESAS -
+    ¿Que es una promesa en JS?
+    "un objeto que representa la terminacion o el fracaso eventual de una funcion asincrona"
+
+APLICACION WEB ->
+
+
+NAVEGADOR Y CODIGO
+
+    console.log('hola mundo!');
+    hola mundo!
+    cambia
+    "@David_Mora"
+    noCambia
+    "Pepito o Pipe"
+    cambia = "@David_Mora"
+    @David_Mora
+    noCambia = "P!p3"
+        TypeError !!!!!!!!
+    clear() -> limpia la consola
+
+    cambiarNombre
+        cambiarNombre(nuevoNombre) {
+            cambia = nuevoNombre
+        }
+    cambiarNombre()
+    undefined
+    cambia
+    undefined
+    cambiarNombre('leito')
+    undefined
+    cambia
+    "leito"
+
+    START !!!
+
+    clase 2 - APRENDIENDO PROMISE
+
+    CODIGO =
+
+   const getUser = new Promise(function(todoBien, todoMal){
+            setTimeout(funcion(){
+                todoBien('muy buen trabajo');    
+            },3000
+        })
+    getUser
+        .then(funcion(){
+         console.log('todo esta bien en la vida)
+    })
+    .catch(funcion(message){
+        console.log('todo mal :(' )
+    }
+    ese 'todo mal', ya lo habiamos programado anteriormente ;)
+
+    EJECUTANDO EN EL NAVEGADOR =
+
+    hola mundo!
+    ( cuenta 1,2,3... internamente en el navegador)
+    todo esta bien en la vida
+
+    CHEATS
+
+    // en este caso la nueva promise va a llevar dos parametros los cuales son: (todoBien, todoMal)
+    los cuales a su vez van a crear la const getUser, y finalmente se invoca la promesa.
+
+    Ahora vamos a utlizar un metodo el cual nos va a permitir saber si la promea funciona, el metodo
+    se llama .then
+
+    para prolongar una promesa es decir, aplazarla, se puede hacer por medio de un API, es decir se debe llamar
+    el API, tambien se puede forzar el el proceso por medio de los timers dentro de JS, con:
+    -setInterval -> es una funcion de Js que se va a ejecutar cada cierto tiempo
+    -setTimeout  -> va a ser una funcion de JS que se va a ejecturar en determinado tiempo.
+    Por lo cual para esta clase vamos a utilizar la segunda setTimeout, en este caso la funcion va a recibir dos
+    parametros, el primero es una function(), y la segunda va a ser el tiempo asignado en milisegundos, en este caso vamos a programar
+    que luego de 3 milisegundos, que se representa como 3000 en el codigo se ejecute la funcion, aplicando todo lo anterior al codigo 
+    queda de la siguiente manera:
+
+        const getUser = new Promise(funcion(todoBien, todoMal){
+            // llamar a un api
+            setTimeout(funcion()){
+            // luego de 3 segundos
+                todoBien();
+            },3000
+        })
+//
+    POSIBLES ERRORES !!!!!
+    que pasa cuando no funciono la promesa de invocar al nuevo usuario que programamos anteriormente en el codigo?
+    
+    Para este caso una posible solucion es invocar al siguiente metodo:
+    .catch(funcion(){
+        console.log('todo mal :(' )
+    }
+    ese 'todo mal', ya lo habiamos programado anteriormente ;)
+
+    luego lo llevo al codigo, recargo y listo :)
+
