@@ -7,8 +7,8 @@ class SellButton extends HTMLElement {
         let shadowRoot = this.attachShadow({
           mode: 'open'
         });
-       const cambio =  this.mytitle =  this.getAttribute('title') || 'Arcanine'
-       
+       this.mytitle =  this.getAttribute('title') || 'Arcanine'
+       this.myboton = this.getAttribute('boton') || 'Conoce más!'
        this.myimagen = this.getAttribute('imagen') || "https://i.pinimg.com/564x/2c/18/95/2c18959f74b0c2cf25ff63e21819a6fd.jpg"
        shadowRoot.innerHTML = `
       
@@ -921,7 +921,7 @@ class SellButton extends HTMLElement {
                   <p class="profile__stats__title">Weight</p>
                   <h5 class="profile__stats__info">155 kg</h5>
               </div>
-              <div class="profile__cta"><a class="button">Conoce más!</a></div>
+              <div class="profile__cta"><a class="button">${this.myboton}</a></div>
           </div>
       </section>
   `
@@ -936,8 +936,10 @@ class SellButton2 extends HTMLElement {
         let shadowRoot = this.attachShadow({
             mode: 'open'
         });
-
-        
+        this.mytitle =  this.getAttribute('title') || 'Rayquaza'
+        this.myboton =  this.getAttribute('boton') || 'Conoce más!'
+        this.myimagen = this.getAttribute('imagen') || "https://i.pinimg.com/564x/a1/e1/77/a1e1778df98995ece06fd42d8e6db556.jpg"
+        this.mydescripcion = this.getAttribute('descripcion') || "Es un Pokémon legendario de tipo dragón/volador introducido en la tercera generación. Es la mascota de Pokémon Esmeralda. Forma parte del trío creador junto con Groudon y Kyogre. A partir de Pokémon Rubí Omega y Pokémon Zafiro Alfa puede megaevolucionar en Mega-Rayquaza."
         shadowRoot.innerHTML = `
         <style>
                :host {
@@ -1830,22 +1832,20 @@ class SellButton2 extends HTMLElement {
                    <div class="profile__image"><img src='${this.myimagen}' alt="Doggo" /></div>
                    <div class="profile__info">
                        <h3>${this.mytitle}</h3>
-                       <p class="profile__info__extra">Es un Pokémon legendario de tipo dragón/volador introducido en la tercera generación. Es la mascota de Pokémon Esmeralda. Forma parte del trío creador junto con Groudon y Kyogre. A partir de Pokémon Rubí Omega y Pokémon Zafiro Alfa puede megaevolucionar en Mega-Rayquaza.</p>
+                       <p class="profile__info__extra">${this.mydescripcion}</p>
                    </div>
                    <div id="repeat"></div>
                    
-                   <div class="profile__cta"><a class="button">Conoce más!</a></div>
+                   <div class="profile__cta"><a class="button">${this.myboton}</a></div>
                </div>
            </section>
        `;
 
-       const m =[{ type: 'dragon' }, { size: '7m' }, { weight: '280kg' }];
-        console.log(m)
-        const mstring = JSON.stringify(m);
-        console.log(mstring);
-        this.mytitle =  this.getAttribute('title') || 'Rayquaza'
-        this.myimagen = this.getAttribute('imagen') || "https://i.pinimg.com/564x/a1/e1/77/a1e1778df98995ece06fd42d8e6db556.jpg"
-        this.mytabla = this.getAttribute('tabla') || ''
+       //const m =[{ type: 'dragon' }, { size: '7m' }, { weight: '280kg' }];
+       //console.log(m)
+       //const mstring = JSON.stringify(m);
+       //console.log(mstring);
+        /* this.mytabla = this.getAttribute('tabla') || ''
         console.log('my tabla',this.mytabla);
         const repeat = document.querySelector('comp-2')
         .shadowRoot
@@ -1868,9 +1868,9 @@ class SellButton2 extends HTMLElement {
           div.appendChild(h5)
 
           repeat.appendChild(div);
-
+ */
         }
-    }
+
 
     template(){
       return `
@@ -3678,11 +3678,15 @@ body {
 class SellButton3 extends HTMLElement {
     constructor() {
         super();
-    }
+      }
     connectedCallback() {
         let shadowRoot = this.attachShadow({
             mode: 'open'
         });
+        this.mytitle =  this.getAttribute('title') || 'Eevee'
+        this.myboton =  this.getAttribute('boton') || 'Conoce más!'
+        this.myimagen = this.getAttribute('imagen') || "https://vignette.wikia.nocookie.net/es.pokemon/images/f/f2/Eevee.png/revision/latest/scale-to-width-down/350?cb=20150621181400"
+        this.mydescripcion = this.getAttribute('descripcion') || "Es un Pokémon de tipo normal introducido en la primera generación. Se caracteriza por ser el Pokémon con más opciones evolutivas, actualmente son 8."
         shadowRoot.innerHTML = `
    <style>
           :host {
@@ -4572,10 +4576,10 @@ class SellButton3 extends HTMLElement {
         </style>
   <section>
           <div class="profile profile-smallimg">
-              <div class="profile__image"><img src="https://vignette.wikia.nocookie.net/es.pokemon/images/f/f2/Eevee.png/revision/latest/scale-to-width-down/350?cb=20150621181400" alt="Doggo" /></div>
+              <div class="profile__image"><img src='${this.myimagen}' alt="Doggo" /></div>
               <div class="profile__info">
-                  <h3>Eevee</h3>
-                  <p class="profile__info__extra">Es un Pokémon de tipo normal introducido en la primera generación. Se caracteriza por ser el Pokémon con más opciones evolutivas, actualmente son 8.</p>
+                  <h3>${this.mytitle}</h3>
+                  <p class="profile__info__extra">${this.mydescripcion}</p>
               </div>
               <div class="profile__stats">
                   <p class="profile__stats__title">Type</p>
@@ -4589,7 +4593,7 @@ class SellButton3 extends HTMLElement {
                   <p class="profile__stats__title">Weight</p>
                   <h5 class="profile__stats__info">6.5kg</h5>
               </div>
-              <div class="profile__cta"><a class="button">Conoce más!</a></div>
+              <div class="profile__cta"><a class="button">${this.myboton}</a></div>
           </div>
       </section>
    `
@@ -4605,8 +4609,11 @@ class SellButton4 extends HTMLElement {
         let shadowRoot = this.attachShadow({
             mode: 'open'
         });
+        this.mytitle =  this.getAttribute('title') || 'Lapras'
+        this.myboton =  this.getAttribute('boton') || 'Conoce más!'
+        this.myimagen = this.getAttribute('imagen') || "https://i.pinimg.com/564x/64/fc/34/64fc34992a805e7e6d1ea8bf89b2e362.jpg"
+        this.mydescripcion = this.getAttribute('descripcion') || "Es un Pokémon de tipo agua/hielo introducido en la primera generación."
         shadowRoot.innerHTML = `
-  
    <style>
           :host {
             --orange: #FFC600;
@@ -5496,10 +5503,10 @@ class SellButton4 extends HTMLElement {
   
   <section>
           <div class="profile profile-table">
-              <div class="profile__image"><img src="https://i.pinimg.com/564x/64/fc/34/64fc34992a805e7e6d1ea8bf89b2e362.jpg" alt="Doggo" /></div>
+              <div class="profile__image"><img src='${this.myimagen}' alt="Doggo" /></div>
               <div class="profile__info">
-                  <h3>Lapras</h3>
-                  <p class="profile__info__extra">Es un Pokémon de tipo agua/hielo introducido en la primera generación.</p>
+                  <h3>${this.mytitle}</h3>
+                  <p class="profile__info__extra">${this.mydescripcion}</p>
               </div>
               <div class="profile__stats">
                   <p class="profile__stats__title">Type</p>
@@ -5513,7 +5520,7 @@ class SellButton4 extends HTMLElement {
                   <p class="profile__stats__title">Weight</p>
                   <h5 class="profile__stats__info">202 kg</h5>
               </div>
-              <div class="profile__cta"><a class="button">Conoce más!</a></div>
+              <div class="profile__cta"><a class="button">${this.myboton}</a></div>
           </div>
       </section>
   `
@@ -5529,6 +5536,10 @@ class SellButton5 extends HTMLElement {
         let shadowRoot = this.attachShadow({
             mode: 'open'
         });
+        this.mytitle =  this.getAttribute('title') || 'Tyranitar'
+        this.myboton =  this.getAttribute('boton') || 'Conoce más!'
+        this.myimagen = this.getAttribute('imagen') || "https://i.pinimg.com/564x/d8/1e/20/d81e20c590810389a54f30946b7403cc.jpg"
+        this.mydescripcion = this.getAttribute('descripcion') || "Es un Pokémon de tipo roca/siniestro introducido en la segunda generación. Es la evolución de Pupitar, a partir de la sexta generación puede megaevolucionar en Mega-Tyranitar."
         shadowRoot.innerHTML = `
   
    <style>
@@ -6420,10 +6431,10 @@ class SellButton5 extends HTMLElement {
   
   <section>
           <div class="profile profile-wide">
-              <div class="profile__image"><img src="https://i.pinimg.com/564x/d8/1e/20/d81e20c590810389a54f30946b7403cc.jpg" alt="Doggo" /></div>
+              <div class="profile__image"><img src='${this.myimagen}' alt="Doggo" /></div>
               <div class="profile__info">
-                  <h3>Tyranitar</h3>
-                  <p class="profile__info__extra">Es un Pokémon de tipo roca/siniestro introducido en la segunda generación. Es la evolución de Pupitar, a partir de la sexta generación puede megaevolucionar en Mega-Tyranitar.</p>
+                  <h3>${this.mytitle}</h3>
+                  <p class="profile__info__extra">${this.mydescripcion}</p>
               </div>
               <div class="profile__stats">
                   <p class="profile__stats__title">Type</p>
@@ -6437,7 +6448,7 @@ class SellButton5 extends HTMLElement {
                   <p class="profile__stats__title">Weight</p>
                   <h5 class="profile__stats__info">4202 kg</h5>
               </div>
-              <div class="profile__cta"><a class="button">Conoce más!</a></div>
+              <div class="profile__cta"><a class="button">${this.myboton}</a></div>
           </div>
       </section>
    `
@@ -6453,6 +6464,10 @@ class SellButton6 extends HTMLElement {
         let shadowRoot = this.attachShadow({
             mode: 'open'
         });
+        this.mytitle =  this.getAttribute('title') || 'Lucario'
+        this.myboton =  this.getAttribute('boton') || 'Conoce más!'
+        this.myimagen = this.getAttribute('imagen') || "https://i.pinimg.com/564x/95/8e/24/958e24d9e3ab92c06c92e552e37d7a64.jpg"
+        this.mydescripcion = this.getAttribute('descripcion') || "Es un Pokémon de tipo lucha/acero introducido en la cuarta generación. Es la evolución de Riolu. Es un Pokémon adelantado por su aparición en la película Lucario y el misterio de Mew (ES), (HA), a partir de la sexta generación puede megaevolucionar en Mega-Lucario."
         shadowRoot.innerHTML = `
    <style>
           :host {
@@ -7342,10 +7357,10 @@ class SellButton6 extends HTMLElement {
         </style>
   <section>
           <div class="profile profile-long">
-              <div class="profile__image"><img src="https://i.pinimg.com/564x/95/8e/24/958e24d9e3ab92c06c92e552e37d7a64.jpg" alt="Doggo" /></div>
+              <div class="profile__image"><img src='${this.myimagen}' alt="Doggo" /></div>
               <div class="profile__info">
-                  <h3>Lucario</h3>
-                  <p class="profile__info__extra">Es un Pokémon de tipo lucha/acero introducido en la cuarta generación. Es la evolución de Riolu. Es un Pokémon adelantado por su aparición en la película Lucario y el misterio de Mew (ES), (HA), a partir de la sexta generación puede megaevolucionar en Mega-Lucario.</p>
+                  <h3>${this.mytitle}</h3>
+                  <p class="profile__info__extra">${this.mydescripcion}</p>
               </div>
               <div class="profile__stats">
                   <p class="profile__stats__title">Type</p>
@@ -7359,7 +7374,7 @@ class SellButton6 extends HTMLElement {
                   <p class="profile__stats__title">Weight</p>
                   <h5 class="profile__stats__info">54kg</h5>
               </div>
-              <div class="profile__cta"><a class="button">Conoce más!</a></div>
+              <div class="profile__cta"><a class="button">${this.myboton}</a></div>
           </div>
       </section>
   `
@@ -7375,6 +7390,10 @@ class SellButton7 extends HTMLElement {
         let shadowRoot = this.attachShadow({
             mode: 'open'
         });
+        this.mytitle =  this.getAttribute('title') || 'Gengar'
+        this.myboton =  this.getAttribute('boton') || 'Conoce más!'
+        this.myimagen = this.getAttribute('imagen') || "https://i.pinimg.com/564x/24/cc/be/24ccbead3516bb60326f00afb08883ba.jpg"
+        this.mydescripcion = this.getAttribute('descripcion') || "Es un Pokémon de tipo fantasma/veneno introducido en la primera generación. Es la evolución de Haunter y, a partir de la sexta generación, puede megaevolucionar en Mega-Gengar."
         shadowRoot.innerHTML = `
    <style>
           :host {
@@ -8265,10 +8284,10 @@ class SellButton7 extends HTMLElement {
   
   <section>
           <div class="profile profile-bigimg">
-              <div class="profile__image"><img src="https://i.pinimg.com/564x/24/cc/be/24ccbead3516bb60326f00afb08883ba.jpg " alt="Doggo" /></div>
+              <div class="profile__image"><img src='${this.myimagen}' alt="Doggo" /></div>
               <div class="profile__info">
-                  <h3>Gengar</h3>
-                  <p class="profile__info__extra"> Es un Pokémon de tipo fantasma/veneno introducido en la primera generación. Es la evolución de Haunter y, a partir de la sexta generación, puede megaevolucionar en Mega-Gengar.</p>
+                  <h3>${this.mytitle}</h3>
+                  <p class="profile__info__extra">${this.mydescripcion}</p>
               </div>
               <div class="profile__stats">
                   <p class="profile__stats__title">Type</p>
@@ -8282,7 +8301,7 @@ class SellButton7 extends HTMLElement {
                   <p class="profile__stats__title">Weight</p>
                   <h5 class="profile__stats__info">40kg</h5>
               </div>
-              <div class="profile__cta"><a class="button">Conoce más!</a></div>
+              <div class="profile__cta"><a class="button">${this.myboton}</a></div>
           </div>
       </section>
   
