@@ -1,0 +1,27 @@
+{
+  "name": "test-webcomponent",
+  "version": "1.0.0",
+  "description": "",
+  "main": "components.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/david-mora-opensky/test-webcomponent.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/david-mora-opensky/test-webcomponent/issues"
+  },
+  "homepage": "https://github.com/david-mora-opensky/test-webcomponent#readme",
+  "devDependencies": {
+    "css-loader": "^3.0.0",
+    "html-loader": "^0.5.5",
+    "raw-loader": "^3.0.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.6"
+  }
+}
