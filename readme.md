@@ -1,6 +1,20 @@
 # test-webcomponent
 
+
+
 - util commands
+
+- init git project
+git init
+
+- clone project
+git clone https://github.com/david-mora-opensky/test-webcomponent.git
+
+- open project with vs code
+code .
+
+- install dependencies
+npm install
 
 - save git changes:
 git add .
