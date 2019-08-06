@@ -4,6 +4,7 @@
   "description": "",
   "main": "components.js",
   "scripts": {
+    "dev": "webpack -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

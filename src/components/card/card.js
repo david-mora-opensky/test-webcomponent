@@ -11,6 +11,7 @@ class Card extends HTMLElement {
         this.shadowRoot.innerHTML = template
         this.shadowRoot.querySelector('style').innerHTML = css
     }
+
     connectedCallback() {
         this.mytitle = this.getAttribute('title') || 'Arcanine'
         this.myboton = this.getAttribute('boton') || 'Conoce más!'
