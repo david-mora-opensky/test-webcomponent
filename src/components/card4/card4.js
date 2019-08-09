@@ -17,6 +17,7 @@
                 this.myimagen = this.getAttribute('imagen') || "https://i.pinimg.com/564x/64/fc/34/64fc34992a805e7e6d1ea8bf89b2e362.jpg";
                 this.shadowRoot.querySelector('[data-button]').innerHTML = this.myboton;
                 this.shadowRoot.querySelector('[data-title]').innerHTML = this.mytitle;
+                this.shadowRoot.querySelector('[data-descripcion]').innerHTML = this.mydescripcion;
                 this.shadowRoot.querySelector('[data-image]').setAttribute("src", this.myimagen);
             }
         }

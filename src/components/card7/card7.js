@@ -17,6 +17,7 @@ class Card7 extends HTMLElement {
         this.myimagen = this.getAttribute('imagen') || "https://i.pinimg.com/564x/24/cc/be/24ccbead3516bb60326f00afb08883ba.jpg";
         this.shadowRoot.querySelector('[data-button]').innerHTML = this.myboton;
         this.shadowRoot.querySelector('[data-title]').innerHTML = this.mytitle;
+        this.shadowRoot.querySelector('[data-descripcion]').innerHTML = this.mydescripcion;
         this.shadowRoot.querySelector('[data-image]').setAttribute("src", this.myimagen);
     }
 }

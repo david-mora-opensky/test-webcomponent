@@ -17,6 +17,7 @@ class Card3 extends HTMLElement {
         this.myimagen = this.getAttribute('imagen') || "https://vignette.wikia.nocookie.net/es.pokemon/images/f/f2/Eevee.png/revision/latest/scale-to-width-down/350?cb=20150621181400";
         this.shadowRoot.querySelector('[data-button]').innerHTML = this.myboton;
         this.shadowRoot.querySelector('[data-title]').innerHTML = this.mytitle;
+        this.shadowRoot.querySelector('[data-descripcion]').innerHTML = this.mydescripcion;
         this.shadowRoot.querySelector('[data-image]').setAttribute("src", this.myimagen);
     }
 }

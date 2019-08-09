@@ -17,6 +17,7 @@ class Card5 extends HTMLElement {
         this.myimagen = this.getAttribute('imagen') || "https://i.pinimg.com/564x/d8/1e/20/d81e20c590810389a54f30946b7403cc.jpg";
         this.shadowRoot.querySelector('[data-button]').innerHTML = this.myboton;
         this.shadowRoot.querySelector('[data-title]').innerHTML = this.mytitle;
+        this.shadowRoot.querySelector('[data-descripcion]').innerHTML = this.mydescripcion;
         this.shadowRoot.querySelector('[data-image]').setAttribute("src", this.myimagen);
     }
 }

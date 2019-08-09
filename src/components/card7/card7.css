@@ -1,23 +1,25 @@
 :host {
-    --orange: #FFC600;
-    --space: 1.5em;
-  }
-    .btn-container {
-    border: 2px dashed var(--orange);
-    padding: var(--space);
-    text-align: center;
-  }
-    .btn {
-    background-color: var(--orange);
-    border: 0;
-    border-radius: 5px;
-    color: white;
-    padding: var(--space);
-    text-transform: uppercase;
-  }
+  --orange: #FFC600;
+  --space: 1.5em;
+}
+  .btn-container {
+  border: 2px dashed var(--orange);
+  padding: var(--space);
+  text-align: center;
+} 
+  .btn {
+  background-color: var(--orange);
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  padding: var(--space);
+  text-transform: uppercase;
+}
+
 :root {
 --canvasColor: #f9f9f9;
 }
+
 body {
 background: var(--canvasColor);
 font-family: "Poppins", sans-serif;
