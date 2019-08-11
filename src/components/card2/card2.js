@@ -1,5 +1,5 @@
 import template from "./card2.html";
-import css from "./card2.css";
+
 
 class Card2 extends HTMLElement {
   constructor() {
@@ -8,7 +8,7 @@ class Card2 extends HTMLElement {
       mode: "open"
     });
     this.shadowRoot.innerHTML = template;
-    this.shadowRoot.querySelector("style").innerHTML = css;
+    
   }
   connectedCallback() {
     this.mytitle = this.getAttribute("title") || "Rayquaza";
