@@ -12,6 +12,7 @@ import Card10 from './components/card10/card10';
 import Card11 from './components/card11/card11';
 import Card12 from './components/card12/card12';
 import Card13 from './components/card13/card13';
+import Card14 from './components/card14/card14';
 import Palette from './components/palette/palette';
 
 
@@ -26,6 +27,7 @@ window.customElements.define('comp-10', Card10);
 window.customElements.define('comp-11', Card11);
 window.customElements.define('comp-12', Card12);
 window.customElements.define('comp-13', Card13);
+window.customElements.define('comp-14', Card14);
 window.customElements.define('my-palette', Palette);
 window.customElements.define('comp-3', Card3);
 window.customElements.define('comp-4', Card4);
