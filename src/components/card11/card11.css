@@ -11,7 +11,6 @@
         box-shadow: 0 3px 15px rgba(51, 51, 51, 0.2);
         background: white;
         border-radius: 10px;
-        height: 267px;
     }
     
     .card11 .img-comp11 {
@@ -78,25 +77,20 @@
         text-align: center;
     }
     
-    button {
-        border: none;
-        outline: 0;
-        display: inline-block;
-        padding: 8px;
-        color: white;
-        background-color: #000;
+    a.button11 {
+        outline: none;
+        width: 93.5%;
         text-align: center;
+        display: inline-block;
+        border-radius: 10px;
+        font: 500 16px "Poppins", sans-serif;
+        padding: 20px;
         cursor: pointer;
-        width: 100%;
-        font-size: 16px;
-        border-radius: 0 0 10px 10px;
-    }
-    
-    a {
-        text-decoration: none;
-        font-size: 16px;
-        color: black;
-        border-radius: 0 0 10px 10px;
+        background: #03A9EF;
+        color: white;
+        position: relative;
+        top: 0;
+        transition: 0.2s ease;
     }
     
     .button {

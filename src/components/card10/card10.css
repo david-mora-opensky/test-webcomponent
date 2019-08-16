@@ -5,7 +5,7 @@ section:nth-child(2) {
 .card10 {
     display: grid;
     max-width: 780px;
-    grid-template-columns: 100px 1fr auto !important;
+    grid-template-columns: 100px 1fr auto;
     grid-auto-flow: dense;
     overflow: hidden;
     box-shadow: 0 3px 15px rgba(51, 51, 51, 0.2);
@@ -55,26 +55,24 @@ section:nth-child(2) {
     background: white;
     grid-column: 5 / 6;
     align-self: center;
-    padding-right: 25px;
+    padding-right: 30px;
 }
 
-button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
+a.button10 {
+    outline: none;
+    width: 75%;
     text-align: center;
+    border-radius: 10px;
+    display: inline-block;
+    border: none;
+    font: 500 16px "Poppins", sans-serif;
+    padding: 20px;
     cursor: pointer;
-    width: 100%;
-    font-size: 16px;
-}
-
-a {
-    text-decoration: none;
-    font-size: 16px;
-    color: black;
+    background: #03A9EF;
+    color: white;
+    position: relative;
+    top: 0;
+    transition: 0.2s ease;
 }
 
 .card10 .img-comp10 img {

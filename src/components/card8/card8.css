@@ -78,8 +78,21 @@ a {
     object-fit: cover;
 }
 
-.button {
-    background: lightskyblue
+a.button {
+    outline: none;
+    width: 80%;
+    text-align: center;
+    display: inline-block;
+    border: none;
+    font: 500 16px "Poppins", sans-serif;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    background: #03A9EF;
+    color: white;
+    position: relative;
+    top: 0;
+    transition: 0.2s ease;
 }
 
 

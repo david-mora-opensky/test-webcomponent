@@ -52,28 +52,25 @@
     background: white;
 }
 
-button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
+a.button9 {
+    outline: none;
+    width: 87%;
     text-align: center;
+    display: inline-block;
+    border: none;
+    font: 500 16px "Poppins", sans-serif;
+    padding: 20px;
     cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-}
-
-a {
-    text-decoration: none;
-    font-size: 22px;
-    color: black;
+    background: #03A9EF;
+    color: white;
+    position: relative;
+    top: 0;
+    transition: 0.2s ease;
 }
 
 .card9 .img-comp9 img {
-    width: 180px;
-    height: 180px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     border: 10px solid #673AB7;
     object-fit: cover;

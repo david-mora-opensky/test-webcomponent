@@ -31,7 +31,7 @@ ctrl + ñ
 - open console on macosx:
 cmd + ñ
 
-- compromisos 
+- compromisos
 
 - 1 ver el video de css variables 14min
 - 2 ver el video de css grid 15 min
