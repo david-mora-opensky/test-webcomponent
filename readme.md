@@ -48,4 +48,7 @@ cmd + ñ
 
 - crear configuracion para recibir multiples atributos a traves de json (stats - type, size...)
 
+-avance del 16/08/2019
+-ajuste del boton en cada componente
+
 
