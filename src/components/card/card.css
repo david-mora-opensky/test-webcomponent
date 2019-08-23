@@ -1,5 +1,5 @@
 :host {
-    --orange: #FFC600;
+    --orange: var(--main-color);
     --space: 1.5em;
   }
 

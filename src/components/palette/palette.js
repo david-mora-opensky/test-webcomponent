@@ -9,16 +9,28 @@ class Palette extends HTMLElement {
         });
         this.shadowRoot.innerHTML = template
         this.shadowRoot.querySelector('style').innerHTML = css
-        this.shadowRoot.querySelector('#picker').addEventListener('change', this.changeColor.bind(this))
+        this.changer = this.shadowRoot.querySelector('#picker');
+        this.changer
+            .addEventListener('change', this.changeColor.bind(this));
     }
 
     changeColor(e) {
         try {
-            console.log('cambie',e)
+            console.log(`this.changer.value`, this.changer.value);
+            document.documentElement.style
+                .setProperty('--main-color', this.changer.value);
         } catch (error) {
             console.log(error)
         }
-    console.log('estoy aqui')
+    }
+
+    submitForm(e) {
+        e.preventDefault();
+        try {
+            console.log('cambie', e)
+        } catch (error) {
+            console.log(error)
+        }
     }
 
 
