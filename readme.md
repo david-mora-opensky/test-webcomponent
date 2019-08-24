@@ -4,6 +4,8 @@
 
 - util commands
 
+
+
 - init git project
 git init
 
@@ -31,7 +33,10 @@ ctrl + ñ
 - open console on macosx:
 cmd + ñ
 
-- compromisos
+- Init webpack 
+npm run dev
+
+## compromisos
 
 - 1 ver el video de css variables 14min
 - 2 ver el video de css grid 15 min
