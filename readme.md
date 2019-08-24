@@ -36,22 +36,29 @@ cmd + ñ
 - Init webpack 
 npm run dev
 
-## compromisos
 
-- 1 ver el video de css variables 14min
-- 2 ver el video de css grid 15 min
-- 3 modificar los componentes 1-7 basado en el 8 (4 horas)
-- 4 andres, revisar el cambio de selector en palette
+## compromisos 24/08/2019
 
-- compromisos 14/08/2019
-- card2  media query, ajustes boton y borde
-- card3 ajustar imagen
-- card4 ajustar boton
-- card5 ajustar media query, ajustar imagen centrada verticalmente
-- card6 ajustar borde radius imagen, ajustar texto alineado izquierda, centrar boton verticalmente desde ipad, ajustar media query para cambiar el grid img arriba boton abajo
-- card7 ok!
+- [] agregar el la var css al resto de componentes
+- [] reemplazar los colores correctos al componente paleta
+- [] agregar el var css dentro de cada div que sea necesario segun el codepen
+- [] revisar la mejor forma de hacer que cambie el color de la letra dependiendo el color que se seleccione
 
-- crear configuracion para recibir multiples atributos a traves de json (stats - type, size...)
+## compromisos 
+
+- [ok] ver el video de css variables 14min 
+- [ok] ver el video de css grid 15 min 
+- [ok] modificar los componentes 1-7 basado en el 8 (4 horas)  
+- [ok] andres, revisar el cambio de selector en palette 
+
+## compromisos 14/08/2019
+- [] card2  media query, ajustes boton y borde
+- [ok] card3 ajustar imagen
+- [ok] card4 ajustar boton
+- [] card5 ajustar media query, ajustar imagen centrada verticalmente
+- [] card6 ajustar borde radius imagen, ajustar texto alineado izquierda, centrar boton verticalmente desde ipad, ajustar media query para cambiar el grid img arriba boton abajo
+- [ok] card7 ok!
+- [] crear configuracion para recibir multiples atributos a traves de json (stats - type, size...)
 
 -avance del 16/08/2019
 -ajuste del boton en cada componente

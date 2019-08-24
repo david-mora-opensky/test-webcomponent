@@ -100,8 +100,15 @@ a.button {
 
 @media only screen and (max-width: 600px) {
     .card {
-        min-width: 100%;
-        grid: 340px / 370px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    display: grid;
+    grid: inherit;
+    grid-gap: 0;
+    border-radius: 10px;
     }
 }
 
