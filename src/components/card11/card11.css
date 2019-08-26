@@ -22,8 +22,8 @@
         width: 120px;
         height: 120px;
         border-radius: 50%;
-        border: 3px solid #673AB7;
-        box-shadow: 0 0 0 4px gray
+        border: 3px solid white;
+        box-shadow: 0 0 0 4px var(--main-color);
     }
     
     .profile_stats11 p {
@@ -86,7 +86,7 @@
         font: 500 16px "Poppins", sans-serif;
         padding: 20px;
         cursor: pointer;
-        background: #03A9EF;
+        background: var(--main-color);
         color: white;
         position: relative;
         top: 0;

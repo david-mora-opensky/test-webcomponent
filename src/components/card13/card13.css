@@ -68,7 +68,7 @@ a.button13 {
     padding: 20px;
     cursor: pointer;
     border-radius: 10px;
-    background: #03A9EF;
+    background: var(--main-color);
     color: white;
     position: relative;
     top: 0;

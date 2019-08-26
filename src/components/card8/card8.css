@@ -1,4 +1,4 @@
-.card {
+.card8 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     text-align: center;
     min-width: 400px;
@@ -76,6 +76,7 @@ a {
     width: 120%;
     height: 100%;
     object-fit: cover;
+    border-bottom: 7px solid var(--main-color);
 }
 
 a.button {

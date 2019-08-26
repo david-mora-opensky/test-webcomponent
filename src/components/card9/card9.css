@@ -61,7 +61,7 @@ a.button9 {
     font: 500 16px "Poppins", sans-serif;
     padding: 20px;
     cursor: pointer;
-    background: #03A9EF;
+    background: var(--main-color);
     color: white;
     position: relative;
     top: 0;
@@ -72,7 +72,7 @@ a.button9 {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    border: 10px solid #673AB7;
+    border: 10px solid var(--main-color);
     object-fit: cover;
     margin-top: -40px;
 }
