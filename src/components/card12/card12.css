@@ -100,3 +100,53 @@ a.button12 {
     top: 0;
     transition: 0.2s ease;
 }
+
+@media only screen and (max-width: 600px) {
+    .card12 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    min-width: 80%;
+    margin: 0;
+    overflow: hidden;
+    display: grid;
+    grid: inherit;
+    grid-gap: 0;
+    border-radius: 10px;
+    }
+    .card12 .container-title12 {
+        grid-column: 3;
+        padding: 5px;
+    }
+
+    .card12 .container-stats12 {
+        grid-row: 3;
+        min-width: 10px;
+        padding-top: 20px;
+        border-top: 0.5px solid gray;
+    }
+
+    .card12 .container-button12 {
+        background: white;
+        grid-row: 4;
+        border-top: 0.5px solid gray;
+        padding-top: 20px;
+    }
+
+    a.button12 {
+        outline: none;
+        width: 200%;
+        text-align: center;
+        display: inline-block;
+        border: none;
+        font: 500 16px "Poppins", sans-serif;
+        padding: 20px;
+        cursor: pointer;
+        border-radius: 10px;
+        background: var(--main-color);
+        color: white;
+        position: relative;
+        top: 0;
+        transition: 0.2s ease;
+    }
+    
+}

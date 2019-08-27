@@ -41,7 +41,7 @@ npm run dev
 
 - [ok] agregar el la var css al resto de componentes
 - [ok] reemplazar los colores correctos al componente paleta
-- [] agregar el var css dentro de cada div que sea necesario segun el codepen
+- [ok] agregar el var css dentro de cada div que sea necesario segun el codepen
 - [] revisar la mejor forma de hacer que cambie el color de la letra dependiendo el color que se seleccione
 
 ## compromisos 
@@ -55,8 +55,8 @@ npm run dev
 - [ok] card2  media query, ajustes boton y borde
 - [ok] card3 ajustar imagen
 - [ok] card4 ajustar boton
-- [] card5 ajustar media query, ajustar imagen centrada verticalmente
-- [] card6 ajustar borde radius imagen, ajustar texto alineado izquierda, centrar boton verticalmente desde ipad, ajustar media query para cambiar el grid img arriba boton abajo
+- [ok] card5 ajustar media query, ajustar imagen centrada verticalmente
+- [ok] card6 ajustar borde radius imagen, ajustar texto alineado izquierda, centrar boton verticalmente desde ipad, ajustar media query para cambiar el grid img arriba boton abajo
 - [ok] card7 ok!
 - [] crear configuracion para recibir multiples atributos a traves de json (stats - type, size...)
 

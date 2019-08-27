@@ -90,12 +90,53 @@ a.button10 {
 .card10 {
     display: grid;
     max-width: 500px;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 100px auto 100px;
     grid-auto-flow: dense;
     overflow: hidden;
     box-shadow: 0 3px 15px rgba(51, 51, 51, 0.2);
     background: white;
     height: 142px;
     border-radius: 10px;
+}
+.container-title10 h3 {
+    color: black;
+    font: 700 16px "Poppins", sans-serif;
+    background: white;
+    display: inline-block;
+    text-align: center;
+    margin: 10px 12px 0;
+}
+a.button10 {
+    outline: none;
+    width: 60px;
+    text-align: center;
+    border-radius: 10px;
+    display: inline-block;
+    border: none;
+    font: 500 14px "Poppins", sans-serif;
+    padding: 10px;
+    cursor: pointer;
+    background: var(--main-color);
+    color: white;
+    position: relative;
+    top: 0;
+    transition: 0.2s ease;
+}
+.img-comp10 img {
+    width: 120px;
+    object-fit: cover;
+
+    display: block;
+}
+.card10 .container-button10 {
+    background: white;
+    align-self: center;
+    padding-right: 10px;
+}
+.container-title10 p {
+    font-size: 16px;
+    display: block;
+    padding-left: 20px;
+    padding-right: 0;
 }
 }

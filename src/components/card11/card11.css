@@ -96,3 +96,74 @@
     .button {
         background: lightskyblue;
     }
+
+    /* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    .card11 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    min-width: 80%;
+    margin: 0;
+    overflow: hidden;
+    display: grid;
+    grid: inherit;
+    grid-gap: 0;
+    border-radius: 10px;
+    }
+
+.card11 .img-comp11 {
+    padding: 0;
+    width: 60px;
+    grid: inherit;
+}
+    .card11 .container-title11 {
+        grid-column: span 3;
+        padding: 25px 25px 15px 0;
+    }
+
+    .card11 .container-stats11 {
+        margin-bottom: 0;
+    }
+    .card11 .img-comp11 {
+        padding: 10px;
+    }
+    
+    .card11 .img-comp11 img {
+        border-radius: 50%;
+        border: 3px solid white;
+        box-shadow: 0 0 0 4px var(--main-color);
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        
+    }
+    .container-title11 h3 {
+        color: black;
+        font: 700 24px "Poppins", sans-serif;
+        background: white;
+        display: inline-block;
+        text-align: center;
+        margin: 20px 25px 0;
+    }
+    .container-stats11{
+        display: grid;
+        grid-template-columns: auto;
+        background: white;
+        font-size: 18px;
+        width: 80px;
+    }
+    .container-stats11 p {
+        padding-bottom: 10px;
+        margin: 0;
+        width: 100px;
+    }
+    .container-stats11 h5  {
+        padding-bottom: 10px;
+        margin: 0;
+    }
+}
+
