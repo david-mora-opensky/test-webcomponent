@@ -39,8 +39,8 @@ npm run dev
 
 ## compromisos 24/08/2019
 
-- [] agregar el la var css al resto de componentes
-- [] reemplazar los colores correctos al componente paleta
+- [ok] agregar el la var css al resto de componentes
+- [ok] reemplazar los colores correctos al componente paleta
 - [] agregar el var css dentro de cada div que sea necesario segun el codepen
 - [] revisar la mejor forma de hacer que cambie el color de la letra dependiendo el color que se seleccione
 
@@ -52,7 +52,7 @@ npm run dev
 - [ok] andres, revisar el cambio de selector en palette 
 
 ## compromisos 14/08/2019
-- [] card2  media query, ajustes boton y borde
+- [ok] card2  media query, ajustes boton y borde
 - [ok] card3 ajustar imagen
 - [ok] card4 ajustar boton
 - [] card5 ajustar media query, ajustar imagen centrada verticalmente

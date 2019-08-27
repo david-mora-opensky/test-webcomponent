@@ -100,10 +100,10 @@ a.button {
 /* Extra small devices (phones, 600px and down) */
 
 @media only screen and (max-width: 600px) {
-    .card {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    .card8 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     text-align: center;
-    width: 100%;
+    min-width: 80%;
     margin: 0;
     overflow: hidden;
     display: grid;
@@ -113,6 +113,17 @@ a.button {
     }
 }
 
+.img-comp2 {
+    width: 100%;
+    height: 300px;
+}
+
+.img-comp2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom: 7px solid var(--main-color);
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
