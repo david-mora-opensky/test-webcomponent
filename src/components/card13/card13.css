@@ -28,12 +28,14 @@ section:nth-child(2) {
     align-self: center;
     padding: 20px 10px 20px 25px;
 }
-.card13 .container-title13 p{
-max-height: 0;
-overflow: hidden;
-opacity: 0;
-transition: max-height .3s ease, opacity .3s ease .3s, margin .3s ease;
+
+.card13 .container-title13 p {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height .3s ease, opacity .3s ease .3s, margin .3s ease;
 }
+
 .card13 .container-stats13 {
     display: none;
 }
@@ -43,11 +45,11 @@ transition: max-height .3s ease, opacity .3s ease .3s, margin .3s ease;
     align-self: center;
 }
 
-.card13:hover .container-title13 p{
+.card13:hover .container-title13 p {
     display: block;
-max-height: 200px;
-margin: 10px 0 0;
-opacity: 1;
+    max-height: 200px;
+    margin: 10px 0 0;
+    opacity: 1;
 }
 
 .container-title13 h3 {
@@ -73,4 +75,16 @@ a.button13 {
     position: relative;
     top: 0;
     transition: 0.2s ease;
+}
+
+@media only screen and (max-width: 600px) {
+    .card13 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 400px auto 0px;
+        border-radius: 10px;
+        width: 340px;
+        overflow: hidden;
+        margin: auto;
+    }
 }

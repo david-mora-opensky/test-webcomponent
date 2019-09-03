@@ -1,3 +1,7 @@
+* {
+    color: var(--secondary-color);
+}
+
 .card8 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     text-align: center;
@@ -9,6 +13,7 @@
     grid: 340px / 452px;
     grid-gap: 0;
     border-radius: 10px;
+    background-color: var(--tertiary-color);
 }
 
 section:nth-child(2) {
@@ -23,10 +28,12 @@ section:nth-child(2) {
     display: inline-block;
     text-align: center;
     margin: 20px 25px 0;
+    background-color: var(--tertiary-color);
 }
 
 .container-title p {
     font-size: 16px;
+    background-color: var(--tertiary-color);
 }
 
 .container-stats {
@@ -34,6 +41,7 @@ section:nth-child(2) {
     grid-template-columns: auto auto auto;
     background: white;
     font-size: 18px;
+    background-color: var(--tertiary-color);
 }
 
 .stats p {
@@ -41,16 +49,19 @@ section:nth-child(2) {
     padding: 0;
     text-align: center;
     font: 500 16px "Poppins", sans-serif;
+    background-color: var(--tertiary-color);
 }
 
 .value-stats h5 {
     background: white;
     font: 18px "Poppins", sans-serif;
     text-align: center;
+    background-color: var(--tertiary-color);
 }
 
 .container-button {
     background: white;
+    background-color: var(--tertiary-color);
 }
 
 button {
@@ -76,7 +87,7 @@ a {
     width: 120%;
     height: 100%;
     object-fit: cover;
-    border-bottom: 7px solid var(--main-color);
+    border-bottom: 7px solid var(--secondary-color);
 }
 
 a.button {
@@ -101,15 +112,15 @@ a.button {
 
 @media only screen and (max-width: 600px) {
     .card8 {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    text-align: center;
-    min-width: 80%;
-    margin: 0;
-    overflow: hidden;
-    display: grid;
-    grid: inherit;
-    grid-gap: 0;
-    border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        text-align: center;
+        min-width: 80%;
+        margin: 0;
+        overflow: hidden;
+        display: grid;
+        grid: inherit;
+        grid-gap: 0;
+        border-radius: 10px;
     }
 }
 
@@ -122,8 +133,9 @@ a.button {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-bottom: 7px solid var(--main-color);
+    border-bottom: 7px solid var(--secondary-color);
 }
+
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 

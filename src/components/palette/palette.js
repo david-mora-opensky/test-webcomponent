@@ -16,9 +16,27 @@ class Palette extends HTMLElement {
 
     changeColor(e) {
         try {
-            console.log(`this.changer.value`, this.changer.value);
-            document.documentElement.style
-                .setProperty('--main-color', this.changer.value);
+
+            const arreglo = JSON.parse(this.changer.value) || this.changer.value;
+            const keys = Object.keys(arreglo);
+            const values = Object.values(arreglo);
+
+            keys.forEach((item, index) => {
+                    document.documentElement.style
+                        .setProperty('--' + item + '-color', values[index]);
+                })
+                //console.log(keys);
+                //console.log(values);
+                /*for (const item of arreglo) {
+                    console.log(item)
+                    setTimeout(() => {
+                        document.documentElement.style
+                            .setProperty('--main-color', item);
+                    }, 5000);
+                }*/
+                //console.log(`this.changer.value`, arreglo);
+                /*  document.documentElement.style
+                     .setProperty('--main-color', this.changer.value); */
         } catch (error) {
             console.log(error)
         }

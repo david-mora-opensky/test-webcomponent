@@ -1,6 +1,7 @@
 # test-webcomponent
 
-
+- live version:
+https://david-mora-opensky.github.io/test-webcomponent/
 
 - util commands
 
@@ -33,18 +34,27 @@ ctrl + ñ
 - open console on macosx:
 cmd + ñ
 
-- Init webpack 
+- Init webpack
 npm run dev
 
+- publish pages
+npm run deploy
+
+## compromisos 2/09/2019
+
+- [ ] agrupar los colores correspondientes detro de palette.html
+- [ ] agregar los colores secondary and tertiary dentro de cada componente que les correponda segun el codepen
+- [ ] borrar los componentes que no son
+- [ ] crear el componente 1 arcanine con boton
 
 ## compromisos 24/08/2019
 
 - [ok] agregar el la var css al resto de componentes
 - [ok] reemplazar los colores correctos al componente paleta
 - [ok] agregar el var css dentro de cada div que sea necesario segun el codepen
-- [] revisar la mejor forma de hacer que cambie el color de la letra dependiendo el color que se seleccione
+- [ok] revisar la mejor forma de hacer que cambie el color de la letra dependiendo el color que se seleccione
 
-## compromisos 
+## compromisos
 
 - [ok] ver el video de css variables 14min 
 - [ok] ver el video de css grid 15 min 
