@@ -45,6 +45,7 @@ npm run deploy
 - [ ] Ajustar border radius del boton de tyranitar
 - [ ] Ajustar el border radius de Eevee
 - [ ] Ajustar el grid del componente Arcanine que quede una columna con dos rows
+- [ ] Ajustar la posicion de la img de Lapras hacia la izquiera, de acuerdo al diseño original, y mirar el texto
 
 
 ## compromisos 2/09/2019
