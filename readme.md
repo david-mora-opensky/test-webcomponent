@@ -41,10 +41,10 @@ npm run dev
 npm run deploy
 
 ## compromisos 9/09/2019
--[ ] Ajustar colores de todos los componentes
--[ ] Ajustar border radius del boton de tyranitar
--[ ] Ajustar el border radius de Eevee
--[ ] Ajustar el grid del componente Arcanine que quede una columna con dos rows
+- [ ] Ajustar colores de todos los componentes
+- [ ] Ajustar border radius del boton de tyranitar
+- [ ] Ajustar el border radius de Eevee
+- [ ] Ajustar el grid del componente Arcanine que quede una columna con dos rows
 
 
 ## compromisos 2/09/2019
