@@ -1,3 +1,7 @@
+* {
+    color: var(--secondary-color);
+}
+
 .card9 {
     width: 300px;
     border-radius: 10px;
@@ -7,13 +11,13 @@
     grid-gap: 10px;
     text-align: center;
     box-shadow: 0 3px 15px rgba(51, 51, 51, 0.2);
-    background: white;
+    background-color: var(--tertiary-color);
 }
 
 .container-title9 h3 {
     color: black;
     font: 700 24px "Poppins", sans-serif;
-    background: white;
+    background-color: var(--tertiary-color);
     display: inline-block;
     text-align: center;
     margin: 20px 25px 0;
@@ -30,26 +34,26 @@
 .card9 .container-stats9 {
     display: grid;
     grid-template-columns: auto;
-    background: white;
+    background-color: var(--tertiary-color);
     font-size: 18px;
     text-align: center;
     margin: 0 30px 10px;
 }
 
 .stats p {
-    background: white;
+    background-color: var(--tertiary-color);
     text-align: center;
     font: 500 16px "Poppins", sans-serif;
 }
 
 .value-stats9 h5 {
-    background: white;
+    color: var(--secondary-color);
     font: 18px "Poppins", sans-serif;
     text-align: center;
 }
 
 .container-button9 {
-    background: white;
+    background-color: var(--tertiary-color);
 }
 
 a.button9 {

@@ -1,3 +1,7 @@
+* {
+    color: var(--secondary-color);
+}
+
 section:nth-child(2) {
     grid-column: 3 / 5;
 }
@@ -7,7 +11,7 @@ section:nth-child(2) {
     grid-template-columns: repeat(4, 1fr) 100px;
     padding: 20px 20px 15px;
     min-width: 570px;
-    background: white;
+    background-color: var(--tertiary-color);
     border-radius: 10px;
     max-width: 570px;
     box-shadow: 0 3px 15px rgba(51, 51, 51, 0.2);
@@ -22,43 +26,44 @@ section:nth-child(2) {
     border-radius: 50%;
     width: 100px;
     height: 100px;
+    background-color: var(--tertiary-color);
 }
 
 .card12 .container-title12 {
     grid-column: 1 / 5;
     grid-row: 1;
     padding: 5px 20px 20px 0;
+    background-color: var(--tertiary-color);
 }
 
 .card12 .container-stats12 {
     min-width: 100px;
     padding-top: 20px;
     border-top: 0.5px solid gray;
+    background-color: var(--tertiary-color);
 }
 
 .profile_stats12 p {
     font-size: 16px;
+    background-color: var(--tertiary-color);
 }
 
 .profile_value12 {
     font: 18px "Poppins", sans-serif;
+    background-color: var(--tertiary-color);
 }
 
-
-
-
-
 .card12 .container-button12 {
-    background: white;
+    background-color: var(--tertiary-color);
     grid-column: span 2;
     border-top: 0.5px solid gray;
     padding-top: 20px;
 }
 
 .container-title12 h3 {
-    color: black;
+    color: var(--secondary-color);
     font: 700 24px "Poppins", sans-serif;
-    background: white;
+    background-color: var(--tertiary-color);
     display: inline-block;
     text-align: center;
     margin: 20px 25px 0;
@@ -72,17 +77,16 @@ section:nth-child(2) {
 }
 
 .stats p {
-    background: white;
+    background-color: var(--tertiary-color);
     text-align: center;
     font: 500 16px "Poppins", sans-serif;
 }
 
 .value-stats12 h5 {
-    background: white;
+    background-color: var(--tertiary-color);
     font: 18px "Poppins", sans-serif;
     text-align: center;
 }
-
 
 a.button12 {
     outline: none;
@@ -102,36 +106,36 @@ a.button12 {
 }
 
 @media only screen and (max-width: 600px) {
+    * {
+        color: var(--tertiary-color);
+    }
     .card12 {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    text-align: center;
-    min-width: 80%;
-    margin: 0;
-    overflow: hidden;
-    display: grid;
-    grid: inherit;
-    grid-gap: 0;
-    border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        text-align: center;
+        min-width: 80%;
+        margin: 0;
+        overflow: hidden;
+        display: grid;
+        grid: inherit;
+        grid-gap: 0;
+        border-radius: 10px;
     }
     .card12 .container-title12 {
         grid-column: 3;
         padding: 5px;
     }
-
     .card12 .container-stats12 {
         grid-row: 3;
         min-width: 10px;
         padding-top: 20px;
         border-top: 0.5px solid gray;
     }
-
     .card12 .container-button12 {
         background: white;
         grid-row: 4;
         border-top: 0.5px solid gray;
         padding-top: 20px;
     }
-
     a.button12 {
         outline: none;
         width: 200%;
@@ -148,5 +152,4 @@ a.button12 {
         top: 0;
         transition: 0.2s ease;
     }
-    
 }

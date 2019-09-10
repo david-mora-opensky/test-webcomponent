@@ -14,5 +14,4 @@ window.customElements.define('comp-10', Card10);
 window.customElements.define('comp-11', Card11);
 window.customElements.define('comp-12', Card12);
 window.customElements.define('comp-13', Card13);
-window.customElements.define('comp-14', Card14);
 window.customElements.define('my-palette', Palette);

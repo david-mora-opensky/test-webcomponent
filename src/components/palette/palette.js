@@ -20,6 +20,7 @@ class Palette extends HTMLElement {
             const arreglo = JSON.parse(this.changer.value) || this.changer.value;
             const keys = Object.keys(arreglo);
             const values = Object.values(arreglo);
+            document.documentElement.style = '';
 
             keys.forEach((item, index) => {
                     document.documentElement.style
