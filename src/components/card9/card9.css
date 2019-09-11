@@ -54,6 +54,7 @@
 
 .container-button9 {
     background-color: var(--tertiary-color);
+    border-radius: 10px;
 }
 
 a.button9 {
@@ -70,6 +71,7 @@ a.button9 {
     position: relative;
     top: 0;
     transition: 0.2s ease;
+    border-radius: 0 0 10px 10px;
 }
 
 .card9 .img-comp9 img {
