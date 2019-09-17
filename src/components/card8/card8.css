@@ -1,0 +1,190 @@
+* {
+    color: var(--secondary-color);
+}
+
+.card8 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    min-width: 400px;
+    max-width: 450px;
+    margin: auto;
+    overflow: hidden;
+    display: grid;
+    grid: 340px / 452px;
+    grid-gap: 0;
+    border-radius: 10px;
+    background-color: var(--tertiary-color);
+}
+
+section:nth-child(2) {
+    grid-column: 3 / 5;
+    display: block
+}
+
+.container-title {
+    color: black;
+    font-size: 18px;
+    background: white;
+    display: inline-block;
+    text-align: center;
+    margin: 20px 25px 0;
+    background-color: var(--tertiary-color);
+}
+
+.container-title h3 {
+    color: var(--cuartiary-color);
+}
+
+.container-title p {
+    font-size: 16px;
+    background-color: var(--tertiary-color);
+    color: var(--cuartiary-color);
+}
+
+.container-stats {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background: white;
+    font-size: 18px;
+    background-color: var(--tertiary-color);
+}
+
+.container-stats p {
+    color: var(--quintiary-color);
+    text-transform: uppercase;
+}
+
+.container-stats h5 {
+    color: var(--cuartiary-color);
+}
+
+.stats p {
+    background: white;
+    padding: 0;
+    text-align: center;
+    font: 500 16px "Poppins", sans-serif;
+    background-color: var(--tertiary-color);
+}
+
+.value-stats h5 {
+    background: white;
+    font: 18px "Poppins", sans-serif;
+    text-align: center;
+    background-color: var(--tertiary-color);
+}
+
+.container-button {
+    background: white;
+    background-color: var(--tertiary-color);
+    padding-bottom: 20px;
+}
+
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    background-color: var(--tertiary-color);
+}
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+.img-comp2 img {
+    width: 120%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom: 7px solid var(--secondary-color);
+    background-color: var(--tertiary-color);
+}
+
+a.button {
+    outline: none;
+    width: 80%;
+    text-align: center;
+    display: inline-block;
+    border: none;
+    font: 500 16px "Poppins", sans-serif;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    background: var(--main-color);
+    color: white;
+    position: relative;
+    top: 0;
+    transition: 0.2s ease;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    .card8 {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        text-align: center;
+        min-width: 80%;
+        margin: 0;
+        overflow: hidden;
+        display: grid;
+        grid: inherit;
+        grid-gap: 0;
+        border-radius: 10px;
+    }
+}
+
+.img-comp2 {
+    width: 100%;
+    height: 300px;
+}
+
+.img-comp2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom: 7px solid var(--secondary-color);
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    .example {
+        background: green;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    .example {
+        background: blue;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    .example {
+        background: orange;
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    .example {
+        background: pink;
+    }
+}

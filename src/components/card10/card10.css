@@ -1,0 +1,145 @@
+* {
+    color: var(--secondary-color);
+}
+
+section:nth-child(2) {
+    grid-column: 3 / 5;
+}
+
+.card10 {
+    display: grid;
+    max-width: 780px;
+    grid-template-columns: 180px 420px 180px;
+    grid-auto-flow: dense;
+    overflow: hidden;
+    box-shadow: 0 3px 15px rgba(51, 51, 51, 0.2);
+    background-color: var(--tertiary-color);
+    height: 142px;
+    border-radius: 10px;
+}
+
+.container-title10 h3 {
+    color: var(--cuartiary-color);
+    font: 700 24px "Poppins", sans-serif;
+    background-color: var(--tertiary-color);
+    display: inline-block;
+    text-align: center;
+    margin: 20px 25px 0;
+}
+
+.container-title10 p {
+    font-size: 16px;
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: var(--cuartiary-color);
+}
+
+.card10 .container-stats10 {
+    display: none;
+}
+
+.stats p {
+    background-color: var(--tertiary-color);
+    text-align: center;
+    font: 500 16px "Poppins", sans-serif;
+}
+
+.value-stats10 h5 {
+    background-color: var(--tertiary-color);
+    font: 18px "Poppins", sans-serif;
+    text-align: center;
+}
+
+.card10 .container-button10 {
+    background-color: var(--tertiary-color);
+    align-self: center;
+    padding-right: 30px;
+}
+
+a.button10 {
+    outline: none;
+    width: 75%;
+    text-align: center;
+    border-radius: 10px;
+    display: inline-block;
+    border: none;
+    font: 500 16px "Poppins", sans-serif;
+    padding: 20px;
+    cursor: pointer;
+    background-color: var(--main-color);
+    color: white;
+    position: relative;
+    top: 0;
+    transition: 0.2s ease;
+}
+
+.card10 .img-comp10 img {
+    grid-column: 1;
+}
+
+.img-comp10 img {
+    width: 160px;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.button {
+    background: lightskyblue
+}
+
+@media only screen and (max-width: 600px) {
+    .card10 {
+        display: grid;
+        max-width: 500px;
+        grid-template-columns: 100px auto 100px;
+        grid-auto-flow: dense;
+        overflow: hidden;
+        box-shadow: 0 3px 15px rgba(51, 51, 51, 0.2);
+        background: white;
+        height: 142px;
+        border-radius: 10px;
+    }
+    .container-title10 h3 {
+        color: black;
+        font: 700 16px "Poppins", sans-serif;
+        background: white;
+        display: inline-block;
+        text-align: center;
+        margin: 10px 12px 0;
+    }
+    a.button10 {
+        outline: none;
+        width: 60px;
+        text-align: center;
+        border-radius: 10px;
+        display: inline-block;
+        border: none;
+        font: 500 14px "Poppins", sans-serif;
+        padding: 10px;
+        cursor: pointer;
+        background: var(--main-color);
+        color: white;
+        position: relative;
+        top: 0;
+        transition: 0.2s ease;
+    }
+    .img-comp10 img {
+        width: 120px;
+        object-fit: cover;
+        display: block;
+    }
+    .card10 .container-button10 {
+        background: white;
+        align-self: center;
+        padding-right: 10px;
+    }
+    .container-title10 p {
+        font-size: 16px;
+        display: block;
+        padding-left: 20px;
+        padding-right: 0;
+    }
+}
