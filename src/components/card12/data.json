@@ -1,0 +1,20 @@
+{
+    "title":"lucario",
+    "description":"Es un Pokémon de tipo lucha/acero introducido en la cuarta generación. Es la evolución de Riolu. Es un Pokémon adelantado por su aparición en la película Lucario y el misterio de Mew (ES), (HA), a partir de la sexta generación puede megaevolucionar en Mega-Lucario.",
+    "image":"https://i.pinimg.com/564x/95/8e/24/958e24d9e3ab92c06c92e552e37d7a64.jpg",
+    "buttonText":"Conoce más!",
+    "data":[
+        {
+            "title":"Type",
+            "descript":"Acero"
+        },
+        {
+            "title":"Size",
+            "descript":"1.2m"
+        },
+        {
+            "title":"Weight",
+            "descript":"54 kg"
+        }
+    ]
+}
