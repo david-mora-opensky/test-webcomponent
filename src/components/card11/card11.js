@@ -1,5 +1,6 @@
 import template from './card11.html';
 import css from './card11.css';
+import extractValues from '../../util/extract';
 
 class Card11 extends HTMLElement {
     constructor() {
@@ -7,21 +8,39 @@ class Card11 extends HTMLElement {
         this.attachShadow({
             mode: 'open'
         });
-        this.shadowRoot.innerHTML = template
-        this.shadowRoot.querySelector('style').innerHTML = css
+        this.shadowRoot.innerHTML = template;
+        this.shadowRoot.querySelector('style').innerHTML = css;
+        console.log('1', 1);
     }
-    connectedCallback() {
-        this.mytitle = this.getAttribute("title") || "Tyranitar";
-        this.mydescripcion = this.getAttribute('descripcion') || "Es un Pokémon de tipo roca/siniestro introducido en la segunda generación. Es la evolución de Pupitar, a partir de la sexta generación puede megaevolucionar en Mega-Tyranitar.";
-        this.myimagen =
-            this.getAttribute("imagen") ||
-            "https://i.pinimg.com/564x/d8/1e/20/d81e20c590810389a54f30946b7403cc.jpg";
-        this.myboton = this.getAttribute("boton") || "Conoce más!";
-        this.shadowRoot.querySelector('[data-image]').setAttribute('src', this.myimagen);
-        this.shadowRoot.querySelector("[data-title]").innerHTML = this.mytitle;
-        this.shadowRoot.querySelector("[data-descripcion]").innerHTML = this.mydescripcion;
-        this.shadowRoot.querySelector("[data-button]").innerHTML = this.myboton;
 
+    render() {
+        console.log('2', 2);
+        const structure = this.getAttribute('data-structure');
+        console.log('structure', structure);
+        const m = structure != null ? JSON.parse(structure) : require('./data.json');
+        const model = this.model();
+        const r = this.extractValues(model, m);
+        console.log('r', r);
+        console.log('m', m);
+        console.log('r', r);
+        this.mytitle = r.title;
+        this.mydescripcion = r.description;
+        this.myimagen = r.image;
+        this.myboton = r.buttonText;
+        this.shadowRoot.querySelector('[data-image]').setAttribute('src', this.myimagen);
+        this.shadowRoot.querySelector('[data-title]').innerHTML = this.mytitle;
+        this.shadowRoot.querySelector('[data-descripcion]').innerHTML = this.mydescripcion;
+        this.shadowRoot.querySelector('[data-button]').innerHTML = this.myboton;
     }
-}
-export default Card11;
+
+    model() {
+        return {
+            title: '',
+            description: '',
+            image: '',
+            buttonText: '',
+            data: []
+        };
+    }
+
+    export default Card11;

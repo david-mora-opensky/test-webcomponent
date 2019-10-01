@@ -1,0 +1,19 @@
+{
+    "title": "Gengar",
+    "description": "Es un Pokémon de tipo fantasma/veneno introducido en la primera generación. Es la evolución de Haunter y, a partir de la sexta generación, puede megaevolucionar en Mega-Gengar.",
+    "image": "https://i.pinimg.com/564x/24/cc/be/24ccbead3516bb60326f00afb08883ba.jpg",
+    "buttonText": "Conoce más!",
+    "data": [{
+            "title": "Type",
+            "descript": "Fantasma"
+        },
+        {
+            "title": "Size",
+            "descript": "1.6m"
+        },
+        {
+            "title": "Weight",
+            "descript": "45 kg"
+        }
+    ]
+}

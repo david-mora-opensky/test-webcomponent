@@ -1,0 +1,19 @@
+{
+    "title": "Eevee",
+    "description": "Es un Pokémon de tipo normal introducido en la primera generación. Se caracteriza por ser el Pokémon con más opciones evolutivas, actualmente son 8.",
+    "image": "https://vignette.wikia.nocookie.net/es.pokemon/images/f/f2/Eevee.png/revision/latest/scale-to-width-down/350?cb=20150621181400",
+    "buttonText": "Conoce más!",
+    "data": [{
+            "title": "Type",
+            "descript": "Normal"
+        },
+        {
+            "title": "Size",
+            "descript": "0.8m"
+        },
+        {
+            "title": "Weight",
+            "descript": "25 kg"
+        }
+    ]
+}

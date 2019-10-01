@@ -1,5 +1,6 @@
 import template from './card13.html';
 import css from './card13.css';
+import extractValues from '../../util/extract';
 
 class Card13 extends HTMLElement {
     constructor() {
@@ -7,21 +8,39 @@ class Card13 extends HTMLElement {
         this.attachShadow({
             mode: 'open'
         });
-        this.shadowRoot.innerHTML = template
-        this.shadowRoot.querySelector('style').innerHTML = css
+        this.shadowRoot.innerHTML = template;
+        this.shadowRoot.querySelector('style').innerHTML = css;
+        console.log('1', 1);
     }
-    connectedCallback() {
-        this.mytitle = this.getAttribute("title") || "Gengar";
-        this.mydescripcion = this.getAttribute('descripcion') || "Es un Pokémon de tipo fantasma/veneno introducido en la primera generación. Es la evolución de Haunter y, a partir de la sexta generación, puede megaevolucionar en Mega-Gengar.";
-        this.myimagen =
-            this.getAttribute("imagen") ||
-            "https://i.pinimg.com/564x/24/cc/be/24ccbead3516bb60326f00afb08883ba.jpg";
-        this.myboton = this.getAttribute("boton") || "Conoce más!";
-        this.shadowRoot.querySelector('[data-image]').setAttribute('src', this.myimagen);
-        this.shadowRoot.querySelector("[data-title]").innerHTML = this.mytitle;
-        this.shadowRoot.querySelector("[data-descripcion]").innerHTML = this.mydescripcion;
-        this.shadowRoot.querySelector("[data-button]").innerHTML = this.myboton;
 
+    render() {
+        console.log('2', 2);
+        const structure = this.getAttribute('data-structure');
+        console.log('structure', structure);
+        const m = structure != null ? JSON.parse(structure) : require('./data.json');
+        const model = this.model();
+        const r = this.extractValues(model, m);
+        console.log('r', r);
+        console.log('m', m);
+        console.log('r', r);
+        this.mytitle = r.title;
+        this.mydescripcion = r.description;
+        this.myimagen = r.image;
+        this.myboton = r.buttonText;
+        this.shadowRoot.querySelector('[data-image]').setAttribute('src', this.myimagen);
+        this.shadowRoot.querySelector('[data-title]').innerHTML = this.mytitle;
+        this.shadowRoot.querySelector('[data-descripcion]').innerHTML = this.mydescripcion;
+        this.shadowRoot.querySelector('[data-button]').innerHTML = this.myboton;
     }
-}
-export default Card13;
+
+    model() {
+        return {
+            title: '',
+            description: '',
+            image: '',
+            buttonText: '',
+            data: []
+        };
+    }
+
+    export default Card13;

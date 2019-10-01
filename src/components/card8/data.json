@@ -1,0 +1,19 @@
+{
+    "title": "Rayquaza",
+    "description": "Es un Pokémon legendario de tipo dragón/volador introducido en la tercera generación. Es la mascota de Pokémon Esmeralda. Forma parte del trío creador junto con Groudon y Kyogre. A partir de Pokémon Rubí Omega y Pokémon Zafiro Alfa puede megaevolucionar en Mega-Rayquaza.",
+    "image": "https://i.pinimg.com/564x/a1/e1/77/a1e1778df98995ece06fd42d8e6db556.jpg",
+    "buttonText": "Conoce más!",
+    "data": [{
+            "title": "Type",
+            "descript": "Dragon"
+        },
+        {
+            "title": "Size",
+            "descript": "7m"
+        },
+        {
+            "title": "Weight",
+            "descript": "280 kg"
+        }
+    ]
+}

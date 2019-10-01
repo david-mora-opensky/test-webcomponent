@@ -1,0 +1,19 @@
+{
+    "title": "Lapras",
+    "description": "Es un Pokémon de tipo agua/hielo el cual tiene una linda relacion con los humanos",
+    "image": "https://i.pinimg.com/564x/64/fc/34/64fc34992a805e7e6d1ea8bf89b2e362.jpg",
+    "buttonText": "Conoce más!",
+    "data": [{
+            "title": "Type",
+            "descript": "Agua/Hielo"
+        },
+        {
+            "title": "Size",
+            "descript": "2m"
+        },
+        {
+            "title": "Weight",
+            "descript": "180 kg"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "title": "Arcanine",
+    "description": "Es un Pokémon de tipo fuego y la evoluacion de Growlithe",
+    "image": "https://i.pinimg.com/564x/2c/18/95/2c18959f74b0c2cf25ff63e21819a6fd.jpg",
+    "buttonText": "Conoce más!",
+    "data": [{
+            "title": "Type",
+            "descript": "Fuego"
+        },
+        {
+            "title": "Size",
+            "descript": "1.9m"
+        },
+        {
+            "title": "Weight",
+            "descript": "155 kg"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "title": "Tyranitar",
+    "description": "Es un Pokémon de tipo roca/siniestro introducido en la segunda generación. Es la evolución de Pupitar, a partir de la sexta generación puede megaevolucionar en Mega-Tyranitar.",
+    "image": "https://i.pinimg.com/564x/d8/1e/20/d81e20c590810389a54f30946b7403cc.jpg",
+    "buttonText": "Conoce más!",
+    "data": [{
+            "title": "Type",
+            "descript": "Roca"
+        },
+        {
+            "title": "Size",
+            "descript": "2.5m"
+        },
+        {
+            "title": "Weight",
+            "descript": "560 kg"
+        }
+    ]
+}
